@@ -1,0 +1,31 @@
+# Hello World
+println! rust macro, fuction println (rust macros in chapter 20)
+using ! means that you are calling a macro instead of a normal function
+
+before running compile it using rust compiler rustc; outputs binary executable.
+
+rust is an ahead-of-time compiled lang; compile and dist. executable, run without needing to install Rust.
+
+# Cargo
+rust's build system and package manager. builds the code, download libraries...
+
+## Creating a project with Cargo
+cargo new hello_cargo
+    generates Cargo.toml file and src dir with main.rs file inside.
+    inits new git repo
+TOML (Tom's Obvious, Minimal Language) Cargo config.
+Packages of code are referred to as creates.
+
+cargo init creates Cargo.toml in existing nonCargo rust project.
+
+## Build&run cargo project
+cargo build
+./target/debug/project_name
+or cargo run compile and runs
+
+cargo check: checks code and makes sure it compiles (doesnt produce an exec.)
+
+## Building for Release
+cargo build --release
+compiles with optimizations. exec. in target/release
+
