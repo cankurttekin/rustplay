@@ -1,0 +1,11 @@
+#Crate
+crate is a collection of Rust src code files.
+when we incl an external depen. Cargo fetches latest versions of things that dep. needs from registry, from Crates.io.
+
+when you build a project Cargo writes a lock file called Cargo.lock
+your project will remain at specified version of the dep. until you update it.
+
+## updating a create to new version
+cargo update will ignore Cargo.lock and will update the dep. to the latest version.
+in this projects case, Cargo will look for versions of rand greater than 0.8.5 and less than 0.9.0.
+
