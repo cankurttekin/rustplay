@@ -9,3 +9,19 @@ your project will remain at specified version of the dep. until you update it.
 cargo update will ignore Cargo.lock and will update the dep. to the latest version.
 in this projects case, Cargo will look for versions of rand greater than 0.8.5 and less than 0.9.0.
 
+## comparing guess with rand number generated
+use std::cmp::Ordering; is used to compare two values. enum Ordering has three variants: Less, Greater, and Equal.
+
+rust's number types
+  i32, u32, i64, u64, i128, u128 etc
+
+let secret_number = rand::thread_rng().gen_range(1..=100);
+
+rust allows to shadow a variable by declaring a new variable with the same name as an existing one.
+shadowing lets you reuse a name, for guess string we dont need guess_str and guess_num. we can just use guess.
+
+## loop
+
+## handling errors
+Err(_) is a wildcard pattern that matches any error value. The underscore (_) is a placeholder that ignores the actual error value. This is useful when you don't need to use the error value in your code.
+
